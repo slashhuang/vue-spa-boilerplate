@@ -3,8 +3,7 @@
  * created on 9/5
  * @Author slashhuang
  */
-//定义vue项目的http请求,路由由global/iwjw/vue_common来处理
-//创建路由实例
+//创建路由实例及http服务
 
 Vue.use(VueRouter);
 Vue.use(VueResource);
