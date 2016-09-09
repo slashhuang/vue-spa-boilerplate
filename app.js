@@ -17,15 +17,9 @@ router.redirect({
   '*': '/password'
 })
 let app = Vue.extend({});
-/* Http[method] = function (url, data, success, options) {*/
+/* 初始化请求*/
 Vue.http['get']('/').then((res)=>{
-       let cbData = res['data'];
-       if(cbData['status']==1){ //成功
-          Object.assign(Vue.prototype.$user,cbData['data']);
-          router.start(app, '.mod-app');
-       }else{
-         //处理拿不到用户状态的情况@TODO
-       }
+   router.start(app, '.mod-app');
 });
 
 
