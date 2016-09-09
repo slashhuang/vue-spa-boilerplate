@@ -62,7 +62,7 @@
         methods: {
             //跳转具体信息填写页面
             ToEnd(){
-               this.codeValid&&this.$router.go('/doneAccount');
+               this.codeValid&&this.$router.go('/password');
             },
             renderTel(tel){
                 let tel3= (tel+'').slice(0,3);

@@ -71,33 +71,18 @@
             },
             initSet(){
                 let _const={errorTime:0};//只能出错5次
-                debugger;
                 let firstInput = {
                     pwdInput: new Array(6),  //密码转换 w6元数组
                     password:'',  //密码区域
                     hasFocus:false,  //是否光标进入
                     isShowPwd:false,  //是否显示密码
                  };
-                if(this.$user.isSetPayPwd=='1'){//是
-                     let initState={
-                            showInitPwd:true,
-                            C_hasPwd:true,//是否已设置过密码
-                        };
-                    return Object.assign(_const,initState,firstInput)
-                }else{//
-                    let initState={ //是否初始化密码
-                        showInitPwd:true,
-                        C_hasPwd:false,//初始化
+
+                 let initState={
+                       showInitPwd:true,
+                        C_hasPwd:true,//是否已设置过密码
                     };
-                    let secondInput={
-                        rePwdInput:new Array(6),  //密码转换 w6元数组
-                        rePassword:'',  //密码区域
-                        reHasFocus:false,   //是否光标进入
-                        reIsShowPwd:false, //是否显示密码
-                        validatorMsg:'' //验证出错信息
-                    };
-                    return Object.assign(initState,firstInput,secondInput)
-                }
+                return Object.assign(_const,initState,firstInput)
             },
             transMode(type){  //定义页面切换
                 let pwdNode = document.getElementById('pwd-node');
@@ -175,15 +160,11 @@
                         this.pwdInput = [...newPwdArr,..._empty];
                     }
                     if(newPwdArr.length>=6){
-                        if(this.C_hasPwd){ //有密码则跳后端验证
-                            this.C_hasPwd_jump();
-                        }else{
                             setTimeout(()=>{
                                 this.showInitPwd=false;
                                 this.$nextTick(()=>this.transMode('1st-2nd'))
                             },0)
                         };
-                    }
                 }
             },
             rePassword:function (val,oldValue) {
@@ -207,7 +188,7 @@
                                 this.$nextTick(()=>this.transMode('2nd-1st'))
                             },800);
                         }else{
-                           this.$router.go('/account')
+                           this.$router.go('/smsCheck')
                         }
                     }
                 }

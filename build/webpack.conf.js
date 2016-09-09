@@ -71,7 +71,6 @@ module.exports = {
     new WebpackNotifierPlugin(
       {
         title: 'Webpack 编译成功',
-        contentImage: path.resolve(process.cwd(), './global/img/logo.png'),
         alwaysNotify: true
       }),
     new ExtractTextPlugin("[name].css"),
