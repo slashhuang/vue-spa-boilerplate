@@ -1,0 +1,18 @@
+{
+  "project":"iwjw-pc",
+  "api":{
+    "resourceSuffix":"/resource/uploadAuto.do",
+    "openAutoSuffix":"/resource/openAuto.do",
+    "versionSuffix":"/resource/getResourceVersion.do"
+  },
+  "serverEnv":{
+    "test":{
+      "serverUrl":"http://192.168.1.75",
+      "projectId":"32"
+    },
+    "beta":{
+      "serverUrl":"http://121.41.34.206:8150",
+      "projectId":"21"
+    }
+  }
+}

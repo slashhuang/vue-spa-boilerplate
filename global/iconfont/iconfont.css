@@ -1,0 +1,47 @@
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot');
+  src: url('iconfont.eot') format('embedded-opentype'),
+  url('iconfont.woff') format('woff'),
+  url('iconfont.ttf') format('truetype'),
+  url('iconfont.svg') format('svg');
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.if-check-mark:before { content: "\e60a"; }
+.if-checked:before { content: "\e619"; }
+.if-success:before { content: "\e600"; }
+.if-close:before { content: "\e607"; }
+.if-arrow-down:before { content: "\e60e"; }
+.if-arrow-right:before { content: "\e60b"; }
+.if-arrow-top:before { content: "\e60f"; }
+.if-email:before { content: "\e604"; }
+.if-mobile:before { content: "\e605"; }
+.if-map-position:before { content: "\e60c"; }
+.if-notice:before { content: "\e601"; }
+.if-help-questions:before { content: "\e617"; }
+.if-payment:before { content: "\e610"; }
+.if-solid-dots:before { content: "\e609"; }
+.if-tabbuy:before { content: "\e602"; }
+.if-bulb:before { content: "\e606"; }
+.if-coupons:before { content: "\e608"; }
+.if-reservaction:before { content: "\d602"; }
+.if-safe:before { content: "\e60d"; }
+.if-fang-border:before { content: "\d601"; }
+.if-home:before { content: "\d603"; }
+.if-reservation:before { content: "\e613"; }
+.if-bill-wait:before { content: "\e614"; }
+.if-delete:before { content: "\d600"; }
+.if-failed:before { content: "\e603"; }
+.if-rmb-process:before { content: "\e611"; }
+.if-no-coupon:before { content: "\e615"; }
+.if-empty-content:before { content: "\e616"; }
+.if-profit:before { content: "\e612"; }
+.if-arrow-right-square:before { content: "\e618"; }

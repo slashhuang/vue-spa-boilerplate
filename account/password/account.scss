@@ -1,0 +1,118 @@
+@import "~iwpath/view.scss";
+@import "../index.scss";
+.account-container{
+    background : $color-f1;
+    width:100%;
+    height:100%;
+    .transaction-pwd{
+        width: 288px;
+        margin:auto;
+        .hint{
+            font-size:14px;
+            color:$color-75;
+            text-align: center;
+            margin-top:24px;
+        }
+        .sixDigitPassword{
+            margin:12px auto;
+            background:#fff;
+            height:48px;
+            width:288px;
+            display: block;
+            position: relative;
+            &:after{
+                clear:both;
+                display: block;
+                height:0;
+            }
+            /*控制是否显示密码*/
+            &.show-pwd{
+                i.fake-input{
+                    .pwd-area{
+                        display: block;
+                        position:absolute;
+                        left:1px;
+                        top:1px;
+                        right:1px;
+                        left:1px;
+                        z-index:50;
+                        background:#fff;
+                        text-align: center;
+                        line-height: 46px;
+                        color:black;
+                    }
+                    b{
+                        display: none;
+                    }
+                }
+            }
+            /*假的input框*/
+            input{
+                display: block;
+                position: absolute;
+                top:0;
+                left:0;
+                width:1px;
+                height:1px;
+                opacity: 0;
+                z-index:-1000;
+            }
+            i.fake-input{
+                display:block;
+                width:48px;
+                height:48px;
+                padding:20px;
+                border-right:1px solid $color-e9;
+                background:#fff;
+                float:left;
+                position:relative;
+                &.target{
+                    &:after{
+                        content:'';
+                        display: block;
+                        height:18px;
+                        width:1px;
+                        position: absolute;
+                        left:24px;
+                        top:15px;
+                        background:$color-75;
+                        z-index:50;
+                        animation: fadeInFromNone 1s infinite;
+                    }
+                    b{
+                        display: none;
+                    }
+                }
+                .pwd-area{
+                    display: none;
+                }
+                &:last-of-type{
+                      border-right:none;
+                }
+                b{
+                    display: block;
+                    margin: 0 auto;
+                    width: 7px;
+                    height: 7px;
+                    border-radius:7px;
+                    background:black;
+                }
+            }
+        }
+        .show-pwd{
+            margin-top:12px;
+            font-size:14px;
+            position:relative;
+            text-align: center;
+            .show-btn{
+                color:$color-00;
+                position:absolute;
+                right:0;
+                top:0;
+            }
+            .validator-msg{
+                color:$color-75;
+            }
+        }
+    }
+}

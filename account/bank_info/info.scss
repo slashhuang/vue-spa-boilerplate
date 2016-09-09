@@ -1,0 +1,77 @@
+@import "~iwpath/view.scss";
+@import "../index.scss";
+$color-e5:#E54A1B;
+$color-fe:#FEC9B4;
+$color-61:#616161;
+$color-bd:#bdbdbd;
+$color-ed:#ededed;
+.account-container{
+    background : $color-f1;
+    width:100%;
+    height:100%;
+    .high-light{
+        color:$color-00;
+    }
+    .hint{
+        font-size:14px;
+        color:$color-75;
+        text-align: left;
+        padding:16px 16px 8px;
+        color:$color-bd;
+        &.sm{
+            color:$color-75;
+            font-size:px2rem(12);
+        }
+    }
+    .transaction-card{
+        width: 100%;
+        .sep{
+            padding-left:px2rem(16);
+            background: white;
+            em{
+                width:100%;
+                height:1px;
+                background:$color-ed;
+                display: block;
+            }
+        }
+        select{
+            background:none;
+            border:none;
+            outline:none;
+            color:$color-75;
+            &.target{
+                color:$color-21;
+            }
+        }
+        input{
+            flex:1;
+            -webkit-flex: 1;
+        }
+    }
+    .btn-next{
+          width:256px;
+            height:40px;
+            line-height:40px;
+            margin:24px auto;
+            background:$color-e5;
+            color:white;
+            text-align: center;
+            border-radius: 4px;
+    }
+    .b-protocal{
+        text-align: center;
+        font-size:12px;
+        color:$color-75;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        .iconfont.if-checked{
+            color:$color-e5;
+            font-size: 12px;
+            margin-right:2px;
+        }
+    }
+}

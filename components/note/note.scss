@@ -1,0 +1,82 @@
+@import "../../global/iwjw/view.scss";
+@import "../const.scss";
+.note-container{
+     position:fixed;
+      width:100%;
+      height:100%;
+      top: 0;
+      left: 0;
+      right:0;
+      bottom:0;
+      display: flex;
+      display:-webkit-flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 70;
+      .note-mask{
+        position:fixed;
+        width:100%;
+        height:100%;
+        background:#000;
+        opacity: .54;
+        z-index:1000;
+      }
+      .note-wrapper {
+        opacity:1;
+        width: px2rem(288);
+        background:#fff;
+        text-align: center;
+        padding-top:20px;
+        border-radius: 10px;
+        color:$color-21;
+        z-index:10000;
+        margin:auto;
+      .head{
+        font-size:px2rem(17);
+        font-weight:bold;
+      }
+      .body{
+         font-size:px2rem(14);
+         padding:10px 20px;
+         line-height:px2rem(24);
+      }
+      .hints{
+        border-top:px2rem(1) solid $color-bd;
+        color:$color-00;
+        font-size:px2rem(17);
+        line-height: px2rem(45);
+      }
+      .buttons{
+          display: flex;
+          display:-webkit-flex;
+          justify-content: center;
+          align-items: center;
+          font-size:px2rem(17);
+          color:$color-00;
+          border-top:px2rem(1) solid $color-bd ;
+        .btn-cancel{
+          flex:1;
+          -webkit-flex: 1;
+          line-height: px2rem(45);
+        }
+        .sep{
+          width:1px;
+          background:$color-bd;
+          height: 45px;
+        }
+        .btn-confirm{
+           flex:1;
+          -webkit-flex: 1;
+           line-height: px2rem(45);
+        }
+      }
+  }
+  .fadeIn-transition {
+    opacity: 1;
+  }
+  .fadeIn-leave,
+  .fadeIn-enter {
+    opacity: 0;
+  }
+
+}

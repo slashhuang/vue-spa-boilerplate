@@ -1,0 +1,92 @@
+@import "~iwpath/view.scss";
+@import "../index.scss";
+$color-e5:#E54A1B;
+$color-fe:#FEC9B4;
+$color-61:#616161;
+.account-container{
+    background : $color-f1;
+    width:100%;
+    height:100%;
+    .transaction-card{
+        width: 100%;
+        .hint{
+            font-size:14px;
+            color:$color-75;
+            text-align: center;
+            margin-top:16px;
+            .high-light{
+                color:$color-00;
+            }
+        }
+        .card-input{
+            width:100%;
+            padding:10px 16px;
+            margin-top:8px;
+            color:$color-21;
+            position: relative;
+            background:#fff;
+            font-size:14px;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: center;
+            i{
+               width:px2rem(40);
+            }
+            label{
+                    flex:1;
+                    -webkit-flex:1;
+                    align-items:flex-start;
+                    line-height: 20px;
+                    position:relative;
+                    span{
+                        flex:1;
+                        -webkit-flex:1;
+                        &.target{
+                            &:after{
+                                content:'';
+                                display: inline-block;
+                                height:18px;
+                                width:1px;
+                                position: absolute;
+                                background:$color-75;
+                                z-index:1000;
+                                animation: fadeInFromNone 1s infinite;
+                            }
+                        }
+                    }
+                    input{
+                        position: absolute;
+                        top:0;
+                        left:0;
+                        width:1px;
+                        height:1px;
+                        opacity: 0;
+                        z-index:-1000;
+                    }
+            }
+            em{
+                width: px2rem(40);
+                display: block;
+                height:px2rem(20);
+                text-align: center;
+                .iconfont{
+                    color:$color-61;
+                    font-size:14px;
+                }
+            }
+        }
+        .show-btn{
+            width:256px;
+            height:40px;
+            line-height:40px;
+            margin:24px auto;
+            background:$color-fe;
+            color:white;
+            text-align: center;
+            border-radius: 4px;
+            &.btn-valid{
+                background:$color-e5;
+            }
+        }
+    }
+}

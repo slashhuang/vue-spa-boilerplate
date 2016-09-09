@@ -1,0 +1,19 @@
+@import "../../index.scss";
+.done-list{
+          color:$color-75;
+          font-size:14px;
+          display: flex;
+          -webkit-flex: flex;
+          justify-content: flex-start;
+          align-items:center;
+          margin-left:32px;
+          padding:7px 0;
+          em{
+            width:px2rem(60);
+          }
+          p{
+            margin-left:12px;
+            flex:1;
+            -webkit-flex: 1;
+          }
+    }

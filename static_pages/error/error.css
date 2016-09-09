@@ -1,0 +1,94 @@
+.div-content {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.div-btn {
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+}
+
+.btn-a {
+    background-color: #e84a01;
+    color: #fff;
+    border-radius: 4px;
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.btn-a:hover {
+    text-decoration: none;
+    background-color: #f16d2f;
+    border-color: #f16d2f;
+}
+
+.div-404 {
+    position: relative;
+}
+
+
+.div-content {
+    background-image: url("error.bg.png");
+    width: 547px;
+    height: 330px;
+    margin: 170px auto 0;
+    color: #8c8c8c;
+}
+
+.error-tittle {
+    font-size: 42px;
+    height: 42px;
+    line-height: 1;
+    padding: 37px 0 30px;
+}
+
+.div-msg {
+    font-size: 20px;
+    line-height: 32px;
+    padding: 0 50px;
+    text-align: left;
+}
+
+
+@media screen and (max-width: 640px) {
+    .div-content {
+        background-image: url("h5.error.bg.png");
+        width: 90%;
+        height: 3.4rem;
+        margin: 0.56rem auto 0;
+        color: rgb(111, 111, 111);
+    }
+
+    .error-tittle {
+        font-size: 0.32rem;
+        line-height: 1;
+        padding: 0.44rem 0 0.32rem;
+        height: 0.33rem;
+    }
+
+    .div-msg {
+        font-size: 0.14rem;
+        padding: 0 0.35rem;
+        text-align: center;
+        line-height: 0.2rem;
+    }
+
+    .btn-a {
+        width: 62.5%;
+        font-size: 0.16rem;
+        height: 0.44rem;
+        line-height: 0.44rem;
+        margin-top: 0.36rem;
+        opacity: 0.89;
+    }
+
+    .div-btn {
+        bottom: 0.48rem;
+    }
+
+}

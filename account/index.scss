@@ -1,0 +1,36 @@
+$color-f1:#f1f1f1;
+$color-75:#757575;
+$color-e9:#E9E9E9;
+$color-00:#005EBD;
+$color-21:#212121;
+$color-e5:#E54A1B;
+$color-fe:#FEC9B4;
+$color-61:#616161;
+$color-bd:#bdbdbd;
+@import "~iwpath/view.scss";
+@-webkit-keyframes fadeInFromNone {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeInFromNone {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

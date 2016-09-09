@@ -1,0 +1,67 @@
+@import "~iwpath/view.scss";
+@import "../index.scss";
+$color-33:#3396FF;
+.sms-container{
+    background : $color-f1;
+    width:100%;
+    height:100%;
+    .sms-info{
+        width: 100%;
+        .hint{
+           font-size:12px;
+           color:$color-75;
+           text-align: center;
+           margin-top:16px;
+       }
+       .tel{
+           color:$color-21;
+           font-size:px2rem(18);
+           margin:8px auto 16px;
+           text-align: center;
+       }
+        .tel-input{
+           width:100%;
+           padding:10px 16px;
+           color:$color-21;
+           position: relative;
+           background:#fff;
+           font-size:14px;
+           display: -webkit-flex;
+           display: flex;
+           justify-content: center;
+           input{
+                 flex:1;
+                 -webkit-flex:1;
+                 color:$color-21;
+            }
+           em.sms-code-btn{
+               width:px2rem(94);
+               display: block;
+               text-align: center;
+               font-size:12px;
+               border:1px solid $color-bd;
+               color:$color-bd;
+               padding:6px 0;
+               border-radius:3px;
+               &.finished{
+                  border-color:$color-33;
+                  color:$color-33;
+                  font-size:14px;
+               }
+           }
+        }
+    }
+    .next-btn{
+       width:256px;
+       height:40px;
+       line-height:40px;
+       margin:24px auto;
+       background:$color-fe;
+       color:white;
+       text-align: center;
+       border-radius: 4px;
+       &.btn-valid{
+           background:$color-e5;
+       }
+    }
+}

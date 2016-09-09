@@ -1,0 +1,32 @@
+@import "~iwpath/view.scss";
+@import "../index.scss";
+$color-33:#3396FF;
+$color-41:#41974D;
+.d-container{
+    background : #fff;
+    width:100%;
+    height:100%;
+    .s-container{
+        text-align: center;
+        margin:48px auto 12px;
+        .if-checked{
+          font-size:72px;
+          color:$color-41;
+        }
+        .o-success{
+          margin-top:16px;
+          font-size:px2rem(17);
+          font-weight: bold;
+        }
+    }
+    .next-btn{
+       width:256px;
+       height:40px;
+       line-height:40px;
+       margin:24px auto;
+       background:$color-e5;
+       color:white;
+       text-align: center;
+       border-radius: 4px;
+    }
+}

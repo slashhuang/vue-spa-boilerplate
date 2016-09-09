@@ -1,0 +1,57 @@
+@import "../const.scss";
+$color-e5:#E54A1B;
+$color-fe:#FEC9B4;
+$color-61:#616161;
+ .c-input{
+     width:100%;
+     padding:10px 16px;
+     color:$color-21;
+     position: relative;
+     background:#fff;
+     font-size:14px;
+     display: -webkit-flex;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     i{
+        width:px2rem(50);
+        color:$color-21;
+     }
+     label{
+          flex:1;
+          -webkit-flex:1;
+          align-items:flex-start;
+          line-height: 20px;
+          position:relative;
+          display: -webkit-flex;
+          display: flex;
+          align-items: center;
+          span{
+           flex:1;
+           -webkit-flex:1;
+           &.target{
+                &:after{
+                    content:'';
+                    display: inline-block;
+                    height:18px;
+                    width:1px;
+                    position: absolute;
+                    background:$color-75;
+                    z-index:1000;
+                    animation: fadeInFromNone 1s infinite;
+                }
+            }
+          }
+          input{
+               position: absolute;
+               top:0;
+               left:0;
+               width:1px;
+               height:1px;
+               opacity: 0;
+               z-index:-1000;
+          }
+     }
+ }
+
+
