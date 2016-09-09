@@ -24,7 +24,6 @@ var gulpWebpack = require("gulp-webpack"),
  * 2. 上传
  */
 var zipTask = require('./zip').zipTask;
-var uploadTask =require('./upload').uploadTask;
 
 var WebpackTask = gulp.task('webpack', function() {
     console.log(chalk.blue('\n以上任务打包完毕 ', new Date().toLocaleString()));
@@ -70,12 +69,8 @@ if(!argv.upload){
     fse.emptydirSync(distFolder);
     console.log(chalk.cyan('--- 已清空dist目录'));
 }
-/*@TODO等后端打通上传即可*/
 gulp.task('default', gulp.series('webpack',zipTask));
-
 gulp.task('uglify',gulp.series('webpack'));
-// gulp.task('zipUpload', gulp.series(zipTask,uploadTask));
-// gulp.task('upload', gulp.series(uploadTask));
 gulp.task('zip',gulp.series('webpack',zipTask));
 
 

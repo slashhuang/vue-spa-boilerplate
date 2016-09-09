@@ -28,7 +28,6 @@ var common = {
 };
 var entry_file = extend(
   main_files,
-  static_files,
   common
 );
 //webpack配置文件
