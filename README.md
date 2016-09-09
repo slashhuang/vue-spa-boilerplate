@@ -1,4 +1,4 @@
 ## vue-spa-boilerplate
 
-## vue项目单页面引用开发脚手架
+## vue项目单页面项目开发脚手架
 

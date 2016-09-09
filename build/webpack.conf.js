@@ -20,8 +20,6 @@ var common = {
     'vue-router',
     'vue-resource',
     'ES6shim',
-    'vueCommon',
-    'vueComponents',
     './global/module/reset.css',
     './global/iconfont/iconfont.css'
   ]
@@ -43,7 +41,7 @@ module.exports = {
     publicPath: 'http://127.0.0.1:8000'
   },
   resolve: {
-    alias: utils.addResolve(extend(moduleAlias, components_files))
+    alias: utils.addResolve(extend(moduleAlias))
   },
   plugins: [
     new CopyWebpackPlugin([

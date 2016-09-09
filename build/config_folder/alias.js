@@ -4,7 +4,11 @@
  */
 
 module.exports = {
-  vueCommon: 'global/iwjw/vue_common.js',
-  vueComponents:'components/index.js',
   ES6shim:'global/lib/ES6_core.js',
+   VueAlert:'alert/index.js',
+   VueRouter:'vue-router',
+   VueResource:'vue-resource',
+    VueNoter:'note/index.js',
+    VueUser:'user/user.js',
+    C_Input:'input/input.vue'
 };
