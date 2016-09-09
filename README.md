@@ -1,4 +1,4 @@
-## iw-p2p-weixin
+## vue-spa-boilerplate
 
-爱理财服务号
+## vue项目单页面引用开发脚手架
 
