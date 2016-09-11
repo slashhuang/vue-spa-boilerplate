@@ -82,7 +82,7 @@
       "author": "slashhuang"
     }
   ],
-  "description": "爱理财微信号",
+  "description": "vue-spa-boilerplate",
   "main": "gulpcontact.js",
   "repository": {
     "type": "git",
